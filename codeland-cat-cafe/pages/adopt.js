@@ -5,7 +5,7 @@ import cats from "../cats";
 function Adopt() {
   const [submitted, setSubmitted] = useState(false);
   return (
-    <Layout route="adopt" title="Adopt">
+    <Layout title="Adopt">
       <div className="content">
         {submitted ? (
           <p>You have submitted the form!</p>

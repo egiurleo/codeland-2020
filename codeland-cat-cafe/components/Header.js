@@ -6,7 +6,7 @@ const linkStyle = {
   cursor: "default"
 };
 
-function Header({ route }) {
+function Header({ title }) {
   return (
     <header>
       <a href="/">
@@ -16,11 +16,11 @@ function Header({ route }) {
       </a>
 
       <div className="menu">
-        <a href="/cats" style={route === 'cats' ? linkStyle : null}>Cats</a>
+        <a href="/cats" style={title === 'Cats' ? linkStyle : null}>Cats</a>
 
-        <a href="/adopt" style={route === 'adopt' ? linkStyle : null}>Adopt</a>
+        <a href="/adopt" style={title === 'Adopt' ? linkStyle : null}>Adopt</a>
 
-        <a href="/staff" style={route === 'staff' ? linkStyle : null}>Staff</a>
+        <a href="/staff" style={title === 'Staff' ? linkStyle : null}>Staff</a>
       </div>
 
       <style jsx>{`

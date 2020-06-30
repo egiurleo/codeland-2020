@@ -5,7 +5,7 @@ import cats from "../cats";
 
 function Cats() {
   return (
-    <Layout route="cats" title="Cats">
+    <Layout title="Cats">
       <Grid>
         {cats.map((cat) => (
           <Card name={cat.name} image={cat.image}>

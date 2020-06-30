@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Layout({ route, title, children }) {
+function Layout({ title, children }) {
   return (
     <div className="container">
       <Head>
@@ -15,7 +15,7 @@ function Layout({ route, title, children }) {
       </Head>
 
       <main>
-        <Header route={route} />
+        <Header title={title} />
         {children}
         <Footer />
       </main>
