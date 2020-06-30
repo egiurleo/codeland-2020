@@ -1,41 +1,23 @@
 import Layout from "../components/Layout";
-import faker from "faker";
+import cats from "../cats";
 
 function Cats() {
-  const cats = [
-    {
-      name: faker.name.firstName(),
-      image: faker.image.cats(),
-    },
-    {
-      name: faker.name.firstName(),
-      image: faker.image.cats(),
-    },
-    {
-      name: "Antoni",
-    },
-  ];
-
   return (
-    <div className="container">
-      <Layout route="cats">
-        <div className="grid">
-          {[1, 2, 3, 4, 5, 6].map((_) => {
-            debugger;
-            return (
-              <div className="cat">
-                <h3>{faker.name.firstName()}</h3>
-                <img src={faker.image.cats(null, null, true)} />
-                <div className="likes-and-dislikes">
-                  <p>Likes: {faker.random.word()}</p>
-                  <p>Disikes: {faker.random.word()}</p>
-                </div>
+    <Layout route="cats" title="Cats">
+      <div className="grid">
+        {cats.map((cat) => {
+          return (
+            <div className="cat">
+              <h3>{cat.name}</h3>
+              <img src={cat.image} />
+              <div className="likes-and-dislikes">
+                <p>Likes: {cat.likes}</p>
+                <p>Disikes: {cat.dislikes}</p>
               </div>
-            );
-          })}
-        </div>
-      </Layout>
-
+            </div>
+          );
+        })}
+      </div>
       <style jsx>
         {`
           .grid {
@@ -75,33 +57,11 @@ function Cats() {
           }
 
           .cat .likes-and-dislikes {
-            margin-top: .5rem;
+            margin-top: 0.5rem;
           }
         `}
       </style>
-
-      <style jsx global>{`
-        html,
-        body {
-          height: 100%;
-          width: 100%;
-          padding: 0;
-          margin: 0;
-          font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
-            Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
-            Helvetica Neue, sans-serif;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+    </Layout>
   );
 }
 

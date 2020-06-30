@@ -10,15 +10,17 @@ function Header({ route }) {
   return (
     <header>
       <a href="/">
-        <img className="title" src="/title.png" alt="Codeland Cat Cafe Logo" />
+        <h1>
+          <img className="title" src="/title.png" alt="Codeland Cat Cafe Logo" />
+        </h1>
       </a>
 
       <div className="menu">
         <a href="/cats" style={route === 'cats' ? linkStyle : null}>Cats</a>
 
-        <a href="/adopt">Adopt</a>
+        <a href="/adopt" style={route === 'adopt' ? linkStyle : null}>Adopt</a>
 
-        <a href="/support">Support</a>
+        <a href="/staff" style={route === 'staff' ? linkStyle : null}>Staff</a>
       </div>
 
       <style jsx>{`
@@ -28,7 +30,7 @@ function Header({ route }) {
           justify-content: space-between;
           align-items: center;
           border-bottom: 1px solid #eaeaea;
-          padding: 2rem;
+          padding: 1.5rem 2rem;
         }
 
         .title {

@@ -1,21 +1,40 @@
+import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Layout({ route, children }) {
+function Layout({ route, title, children }) {
   return (
-    <main>
-      <Header route={route}/>
-      {children}
-      <Footer />
+    <div className="container">
+      <Head>
+        <title>Codeland Cat Cafe { title ? ` | ${title}` : null }</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto"
+        />
+      </Head>
 
+      <main>
+        <Header route={route} />
+        {children}
+        <Footer />
+      </main>
       <style jsx>{`
+        .container {
+          flex: 1;
+          display: flex;
+          width: 100%;
+        }
+
         main {
           width: 100%;
           flex: 1;
           display: flex;
           flex-direction: column;
         }
+      `}</style>
 
+      <style jsx global>{`
         html,
         body {
           height: 100%;
@@ -31,12 +50,18 @@ function Layout({ route, children }) {
           color: inherit;
           text-decoration: none;
         }
-
+        
         * {
           box-sizing: border-box;
         }
+
+        #__next {
+          height: 100%;
+          width: 100%;
+          display: flex;
+        }
       `}</style>
-    </main>
+    </div>
   );
 }
 

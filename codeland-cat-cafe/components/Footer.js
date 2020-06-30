@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer>
       <p>
-        Made with ❤️ by&nbsp;
+        Made with ❤️ by{" "}
         <a
           href="https://emilygiurleo.dev"
           target="_blank"
@@ -10,7 +10,7 @@ function Footer() {
         >
           Emily Giurleo
         </a>
-        &nbsp;for&nbsp;
+        {" "}for{" "}
         <a
           href="https://codelandconf.com/"
           target="_blank"
