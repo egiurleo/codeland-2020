@@ -1,30 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img src="https://codeland-open-source-workshop.vercel.app/title.png" height=150px alt="Your First Open Source Contribution"/>
 
-## Getting Started
+👋 Welcome to "Your First Open Source Contribution." This is a virtual workshop for the [Codeland 2020](https://codelandconf.com) conference where participants will have the opportunity to make their first contributions to an open source GitHub repository -- aka, the thing you're looking at right now!
 
-First, run the development server:
+## 🍴 Fork and Clone this Repo
 
-```bash
-npm run dev
-# or
-yarn dev
+Follow these steps to start developing locally on this repository!
+
+See the [GitHub SSH documentation](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) for more information about setting up your SSH key.
+
+1. Fork the repository using the "Fork" button on the top-right part of the page.
+
+2. Once the repository is forked, clone it by running the following command in your terminal:
+```
+git clone git@github.com:<your-username>/codeland-2020.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Set this repository as a git remote:
+```
+git remote add upstream git@github.com:<your-username>/codeland-2020.git
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## ⤵️ Install Dependencies
 
-## Learn More
+Make sure you have Node.js and npm or yarn installed on your machine.
 
-To learn more about Next.js, take a look at the following resources:
+1. Navigate into your newly-cloned repo:
+```
+cd codeland-2020
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
+```
+yarn install
+# OR
+npm i
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🏃🏿‍♀️ Run Local Server
 
-## Deploy on Vercel
+Once your dependencies are installed, you can run the development server locally:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+yarn dev
+# OR
+npm run dev
+```
+Open `localhost:3000` to see the site!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contribute
+
+1. Create a new branch:
+```
+git checkout -b <your-branch-name>
+```
+
+2. Implement your changes and commit them to the branch. Please make sure to include a test that would fail without your changes!
+
+3. Push to your forked repo:
+```
+git push -u origin <your-branch-name>
+```
+
+4. [Create a new pull request on this repository](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
