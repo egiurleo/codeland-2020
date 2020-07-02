@@ -6,7 +6,7 @@ function Layout({ title, children }) {
   return (
     <div className="container">
       <Head>
-        <title>Codeland Cat Cafe { title ? ` | ${title}` : null }</title>
+        <title>Your First Open Source Contribution</title>
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
