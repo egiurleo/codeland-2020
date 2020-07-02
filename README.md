@@ -1,8 +1,8 @@
 <img src="https://codeland-open-source-workshop.vercel.app/title.png" height=150px alt="Your First Open Source Contribution"/>
 
-👋 Welcome to "Your First Open Source Contribution." This is a virtual workshop for the [Codeland 2020](https://codelandconf.com) conference where participants will have the opportunity to make their first contributions to an open source GitHub repository -- aka, the thing you're looking at right now!
+"Your First Open Source Contribution" is a virtual workshop for the [Codeland 2020](https://codelandconf.com) conference where participants will have the opportunity to make their first contributions to an open source GitHub repository -- aka, the thing you're looking at right now!
 
-## 🍴 Fork and Clone this Repo
+## Fork and Clone this Repo
 
 Follow these steps to start developing locally on this repository!
 
@@ -20,7 +20,7 @@ git clone git@github.com:<your-username>/codeland-2020.git
 git remote add upstream git@github.com:<your-username>/codeland-2020.git
 ```
 
-## ⤵️ Install Dependencies
+## Install Dependencies
 
 Make sure you have Node.js and npm or yarn installed on your machine.
 
@@ -36,7 +36,7 @@ yarn install
 npm i
 ```
 
-## 🏃🏿‍♀️ Run Local Server
+## Run Local Server
 
 Once your dependencies are installed, you can run the development server locally:
 
