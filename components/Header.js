@@ -1,26 +1,26 @@
-import Link from "next/link";
-
-const linkStyle = {
-  textDecoration: "underline",
-  pointerEvents: "none",
-  cursor: "default"
-};
-
-function Header({ title }) {
+function Header() {
   return (
     <header>
       <a href="/">
         <h1>
-          <img className="title" src="/title.png" alt="Codeland Cat Cafe Logo" />
+          <img
+            className="title"
+            src="/title.png"
+            alt="Your First Open Source Workshop"
+          />
         </h1>
       </a>
 
       <div className="menu">
-        <a href="/cats" style={title === 'Cats' ? linkStyle : null}>Cats</a>
+        <a href="https://github.com/egiurleo/codeland-2020" target="_blank" rel="noreferrer noopener">
+          Code
+        </a>
 
-        <a href="/adopt" style={title === 'Adopt' ? linkStyle : null}>Adopt</a>
+        <a href="https://docs.google.com/presentation/d/1nGELytl08YFVrcH4bfWQIzooOBrak28-xOrEKNC0SwI/edit#slide=id.p" target="_blank" rel="noreferrer noopener">
+          Slides
+        </a>
 
-        <a href="/staff" style={title === 'Staff' ? linkStyle : null}>Staff</a>
+        <a href="#">Resources</a>
       </div>
 
       <style jsx>{`
@@ -34,8 +34,7 @@ function Header({ title }) {
         }
 
         .title {
-          height: 7rem;
-          margin-left: 2rem;
+          width: 17rem;
         }
 
         .menu {
@@ -43,7 +42,7 @@ function Header({ title }) {
           font-size: 1.75rem;
           display: flex;
           justify-content: space-between;
-          min-width: 17rem;
+          min-width: 20rem;
         }
 
         .menu a:hover {
