@@ -14,16 +14,15 @@ function About({ name, imageUrl, description }) {
           display: flex;
           flex-direction: row;
           padding: 2rem;
+          flex: 1;
         }
 
         .about-image {
-          flex: 3;
-          width: 1rem;
+          height: 20rem;
         }
 
         .about {
           margin-left: 2rem;
-          flex: 5;
         }
       `}</style>
     </div>
