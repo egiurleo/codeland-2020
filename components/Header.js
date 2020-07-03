@@ -12,15 +12,29 @@ function Header() {
       </a>
 
       <div className="menu">
-        <a href="https://github.com/egiurleo/codeland-2020" target="_blank" rel="noreferrer noopener">
+        <a
+          href="https://github.com/egiurleo/codeland-2020"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Code
         </a>
 
-        <a href="https://docs.google.com/presentation/d/1nGELytl08YFVrcH4bfWQIzooOBrak28-xOrEKNC0SwI/edit#slide=id.p" target="_blank" rel="noreferrer noopener">
+        <a
+          href="https://docs.google.com/presentation/d/1nGELytl08YFVrcH4bfWQIzooOBrak28-xOrEKNC0SwI/edit#slide=id.p"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Slides
         </a>
 
-        <a href="#">Resources</a>
+        <a
+          href="https://drive.google.com/file/d/1ZTy1PLnalqCUmh1qAq0xCdv0lYdOpMq-/view?usp=sharing"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Resources
+        </a>
       </div>
 
       <style jsx>{`
