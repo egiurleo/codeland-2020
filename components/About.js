@@ -7,7 +7,7 @@ function About({ name, imageUrl, description }) {
       />
       <div className="about">
         <h1>{name}</h1>
-        {description}
+        <p>{description}</p>
       </div>
       <style jsx>{`
         .about-container {
@@ -23,6 +23,11 @@ function About({ name, imageUrl, description }) {
 
         .about {
           margin-left: 2rem;
+          max-width: 35rem;
+        }
+
+        .about p {
+          font-size: 1.25rem;
         }
       `}</style>
     </div>

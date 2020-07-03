@@ -2,7 +2,7 @@ import Head from "next/head";
 import Header from "./Header";
 import Footer from "./Footer";
 
-function Layout({ title, children }) {
+function Layout({ children }) {
   return (
     <div className="container">
       <Head>
@@ -10,12 +10,12 @@ function Layout({ title, children }) {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Roboto"
+          href="https://fonts.googleapis.com/css?family=Roboto:300"
         />
       </Head>
 
       <main>
-        <Header title={title} />
+        <Header/>
         {children}
         <Footer />
       </main>
@@ -44,6 +44,8 @@ function Layout({ title, children }) {
           font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI,
             Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
             Helvetica Neue, sans-serif;
+          font-weight: 300;
+          line-height: 1.75;
         }
 
         a {

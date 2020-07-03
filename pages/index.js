@@ -55,7 +55,6 @@ export default function Home({ staffList }) {
 
         .description p {
           margin-bottom: 2rem;
-          line-height: 1.75rem;
         }
 
         .description a {
