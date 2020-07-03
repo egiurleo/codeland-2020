@@ -17,7 +17,7 @@ git clone git@github.com:<your-username>/codeland-2020.git
 
 3. Set this repository as a git remote:
 ```
-git remote add upstream git@github.com:<your-username>/codeland-2020.git
+git remote add upstream git@github.com:egiurleo/codeland-2020.git
 ```
 
 ## Install Dependencies
