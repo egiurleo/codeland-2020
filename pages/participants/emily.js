@@ -6,7 +6,7 @@ function Emily() {
     <Layout>
       <About
         name="Emily Giurleo"
-        imageUrl="https://bit.ly/3eURoG4"
+        imageUrl="https://images.unsplash.com/photo-1519052537078-e6302a4968d4"
         description="Hey, there! My name is Emily and I'm the leader of this workshop. I love writing Ruby code and petting cats."
       />
     </Layout>
