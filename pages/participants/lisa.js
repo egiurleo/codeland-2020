@@ -7,7 +7,7 @@ function Lisa() {
       <About
         name="Lisa"
         imageUrl="https://images.unsplash.com/photo-1519052537078-e6302a4968d4"
-        description="Hey, there! My name is Lisa and I'm a participant of this workshop. I love writing HTML/CSS code and petting cats, dogs and the ocassional fish."
+        description="Hey, there! My name is Lisa Hostetler and I'm a participant of this workshop. I love writing HTML/CSS code and petting cats, dogs and the ocassional fish."
       />
     </Layout>
   );

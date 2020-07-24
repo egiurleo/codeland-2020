@@ -1,6 +1,6 @@
 import React from "react";
 import { mount } from "enzyme";
-import Lisa from "../pages/participants/lisa";
+import Lisa from "../pages/participants/lisa.js";
 
 describe("Lisa's page", () => {
   it("displays Lisa's name", () => {
