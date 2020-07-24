@@ -1,7 +1,7 @@
 import Layout from "../../components/Layout";
 import About from "../../components/About";
 
-function Emily() {
+function Maren() {
   return (
     <Layout>
       <About
@@ -13,4 +13,4 @@ function Emily() {
   );
 }
 
-export default Emily;
+export default Maren;
