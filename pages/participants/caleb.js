@@ -5,7 +5,7 @@ function Caleb() {
   return (
     <Layout>
       <About
-        name={<a href="https://caleb.biz">Caleb Aviles</a>}
+        name="Caleb Aviles"
         imageUrl="/biz.png"
         description="Hey, there! My name is Caleb and I'm a Full Stack Software Engineer. I love writing RoR, JavaScript HTML, and CSS."
       />
