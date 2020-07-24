@@ -5,9 +5,9 @@ function Emily() {
   return (
     <Layout>
       <About
-        name="Emily Giurleo"
-        imageUrl="https://images.unsplash.com/photo-1519052537078-e6302a4968d4"
-        description="Hey, there! My name is Emily and I'm the leader of this workshop. I love writing Ruby code and petting cats."
+        name="Maren Lilleberre"
+        imageUrl="https://github.com/Zohla/Zohla/blob/master/maren_bulb.jpg"
+        description="I'm a mother of 3, a preschool teacher by day, and a codenewbie at night(you know, after the kids bedtime and also every other free time I can squeeze in!)"
       />
     </Layout>
   );
