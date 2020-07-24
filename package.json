@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "jest": "jest"
+    "start": "next start"
   },
   "dependencies": {
     "next": "9.4.4",
