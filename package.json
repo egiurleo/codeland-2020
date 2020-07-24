@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "jest": "jest"
+    "test": "./node_modules/.bin/jest"
   },
   "dependencies": {
     "next": "9.4.4",
